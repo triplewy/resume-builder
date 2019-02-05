@@ -1,32 +1,170 @@
 .App {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.App>div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.right>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.right h1 {
+  height: 79px;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 32px;
+}
+
+.exportPDF {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 64px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(0, 122, 255);
+  transition: all 0.4s;
+}
+
+.exportPDF:hover {
+  background-color: rgb(90, 200, 250);
+}
+
+.wrapper {
+  height: 792px;
+  width: 612px;
+  padding: none;
+  background-color: white;
+  margin: auto;
+  padding: 20px 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.header {
+  display: flex;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  background: #1be28d;
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-right: 20px;
+}
+
+.logo>p {
+  font-size: 14px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-text h1 {
+  font-size: 16px;
+}
+
+.header-text h2 {
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.about {
+  margin-top: 15px;
+}
+
+.about>p {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #96999b;
+}
+
+.about>p:first-child {
+  color: #323336;
+}
+
+.about>p:last-child {
+  margin-bottom: 0;
+}
+
+#skills {
+  margin-top: 15px;
+}
+
+.skills>div {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills>div>div {
+  background: #96999b;
+  padding: 4px 5px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#coursework div.title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#coursework h2 {
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#coursework h4 {
+  margin-left: auto;
+}
+
+#coursework span {
+  font-size: 12px;
+  color: #96999b;
+}
+
+.section {
+  margin-top: 25px;
+}
+
+.section>h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: rgb(0, 122, 255);
+  margin-bottom: 5px;
+  /* color: #c9cccf; */
+}
+
+.section h2 {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.section h4 {
+  color: #96999b;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.section div.second {
+  margin-top: 15px;
+}
+
+.section li {
+  font-size: 12px;
 }
